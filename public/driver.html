@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Dashboard - Ebus Management System</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Driver Dashboard</h1>
+        <form id="busDetailsForm">
+            <label for="busNumber">Bus Number:</label>
+            <input type="text" id="busNumber" required>
+
+            <label for="busType">Bus Type:</label>
+            <input type="text" id="busType" required>
+
+            <label for="contactInfo">Contact Information:</label>
+            <input type="text" id="contactInfo" required>
+
+            <button type="submit">Post Bus Details</button>
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/driver.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebus Management System - Admin</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Panel</h1>
+        <form id="create-driver-form">
+            <label for="driver-name">Driver Name:</label>
+            <input type="text" id="driver-name" required>
+
+            <label for="driver-email">Driver Email:</label>
+            <input type="email" id="driver-email" required>
+
+            <label for="driver-password">Driver Password:</label>
+            <input type="password" id="driver-password" required>
+
+            <label for="bus-number">Bus Number:</label>
+            <input type="text" id="bus-number" required>
+
+            <label for="bus-type">Bus Type:</label>
+            <input type="text" id="bus-type" required>
+
+            <button type="submit">Create Driver Account</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
